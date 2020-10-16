@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Children Task 3878</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="js/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script>
+        $(function(){
+            const wrap = $('[data-wrap="test-wrap"]');
+            $(wrap[0]).load("views/view-4.html");
+        });
+    </script>
+</head>
+<body class="overflow-disabled">
+<div class="wrapper">
+
+    <button id="configModeBtn">
+        <span>Включить</span> cупер режим
+    </button>
+
+    <div id="start">
+        <button type="button">Начать!</button>
+    </div>
+
+    <div class="test" data-wrap="test-wrap"></div>
+
+    <div id="apply">
+        <button class="btn"
+                type="button">
+            Принять ответ
+        </button>
+    </div>
+
+</div>
+
+<audio id="taskSound" muted>
+    <source src="sound/03417.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio id="wrongSound">
+    <source src="sound/wrong.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<audio id="correctSound">
+    <source src="sound/correct.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div id="toast"></div>
+<div id="toast-skip">
+    <button type="button">Пропустить задание</button>
+</div>
+
+<div id="report"></div>
+
+<script src="js/drag-n-drop.js"></script>
+<script src="js/toast.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
